@@ -5,8 +5,13 @@ const request = require('request');
 const bodyParser  = require('body-parser');
 const cors = require('cors');
 
+const push = require('./src/routes/push')
+
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use('/push', push)
+
 app.listen(port);
 console.log(`
 ────────────────▄────────────────
