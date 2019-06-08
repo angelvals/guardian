@@ -7,7 +7,7 @@ router.post('/register', async(req, res) => {
 })
 
 router.post('/sendNotification', async(req, res) => {
-  res.json(await sendNotification(0, req.body.deviceId, req.body.deviceType))
+  res.json(await sendNotification(req.body.players, req.body.heading, req.body.text, req.body.data))
 })
 
 module.exports = router
