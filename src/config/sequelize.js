@@ -1,11 +1,13 @@
 const Sequelize = require('sequelize')
 
-const env = process.env.NODE_ENV || 'dev'
-const config = require('./db')[env]
+const env = process.env.NODE_ENV || 'development'
+const config = require('../../config/config.json')[env]
 
-const sequelize = new Sequelize(config.database, config.databaseUser, config.databasePassword, {
+console.log(config)
+
+const sequelize = new Sequelize(config.database, config.username, config.password, {
   dialect: 'mysql',
-  host: config.databaseURL,
+  host: config.host,
   port: config.databasePort,
   driver: 'tedious',
   // set to true when you want to output sql logging

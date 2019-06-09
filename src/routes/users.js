@@ -15,9 +15,7 @@ router.get('/logout', (req, res) => {
 })
 
 router.get('/sess', (req, res) => {
-  return res.status(401).json({
-    message: 'Login failed'
-  })
+  return res.json(req.user)
 })
 
 module.exports = router

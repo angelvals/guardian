@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 const request = require('request');
 const bodyParser  = require('body-parser');
 const cors = require('cors');
+const passport = require('passport');
 
 const auth = require('./src/routes/authentication')
 const push = require('./src/routes/push')
@@ -15,8 +16,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/auth', auth)
-app.use('/push', push)
-app.use('/user', users)
+app.use('/push', passport.authenticate('jwt', {session: false}), push);
+app.use('/user', passport.authenticate('jwt', {session: false}), users);
 
 app.listen(port);
 console.log(`

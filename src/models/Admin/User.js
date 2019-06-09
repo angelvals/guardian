@@ -13,7 +13,8 @@ const User = define('User', {
     },
   },
   Password: Sequelize.STRING,
-  Salt: Sequelize.STRING
+  Salt: Sequelize.STRING,
+  PushToken: Sequelize.STRING
 })
 
 User.prototype.validatePassword = function validatePassword(password) {
@@ -24,6 +25,7 @@ User.prototype.validatePassword = function validatePassword(password) {
 User.prototype.generateJWT = function generateJWT() {
   const expirationDate = moment().add(60, 'minutes').valueOf()
   return jwt.sign({
+    username: this.UserName,
     email: this.Email,
     exp: expirationDate,
   }, 'secret')
