@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const User = require('../models/Admin/User')
+const { deletePushToken } = require('../services/users/userService')
 
 router.get('/', (req, res) => {
   User.findAll().then( users => {
@@ -17,7 +18,7 @@ router.post('/', (req, res) => {
 })
 
 router.get('/logout', (req, res) => {
-  res.json({})
+  deletePushToken(req, res)
 })
 
 router.get('/sess', (req, res) => {

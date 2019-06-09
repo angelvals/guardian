@@ -4,7 +4,7 @@ const login = (req, res) => {
 
   passport.authenticate('local', { session: false }, (err, user, info) => {
 
-    console.log(user)
+    //console.log(user)
 
     if (err || !user) {
       return res.status(401).json({
