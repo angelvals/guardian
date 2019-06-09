@@ -5,12 +5,18 @@ const request = require('request');
 const bodyParser  = require('body-parser');
 const cors = require('cors');
 
+const auth = require('./src/routes/authentication')
 const push = require('./src/routes/push')
+const users = require('./src/routes/users')
+
+require('./src/config/passport')
 
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use('/auth', auth)
 app.use('/push', push)
+app.use('/user', users)
 
 app.listen(port);
 console.log(`
