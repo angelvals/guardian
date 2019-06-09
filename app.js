@@ -15,6 +15,14 @@ require('./src/config/passport')
 app.use(cors());
 app.use(bodyParser.json());
 
+//Token handler
+app.use((req, res, next) => {
+    if(req.headers.authorization){
+        res.setHeader("X-Bearer-Token", req.headers.authorization.replace('Bearer ', ''))
+    }
+    next()
+})
+
 app.use('/auth', auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
 app.use('/user', passport.authenticate('jwt', {session: false}), users);
