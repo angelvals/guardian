@@ -14,6 +14,7 @@ require('./src/config/passport')
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/views', express.static(__dirname + '/src/views'));
 
 //Token handler
 app.use((req, res, next) => {
