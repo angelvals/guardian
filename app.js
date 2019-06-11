@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const server = require('http').createServer(app)
+const io = require('socket.io')(server)
 const port = process.env.PORT || 3000;
 const request = require('request');
 const bodyParser  = require('body-parser');
@@ -28,21 +30,6 @@ app.use('/auth', auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
 app.use('/user', passport.authenticate('jwt', {session: false}), users);
 
-app.listen(port);
-console.log(`
-────────────────▄────────────────
-──────────────▄▀░▀▄──────────────
-────────────▄▀░░░░░▀▄────────────
-──────────▄▀░░░░░░░░░▀▄──────────
-────────▄█▄▄▄▄▄▄▄▄▄▄▄▄▄█▄────────
-───────▄▀▄─────────────▄▀▄───────
-─────▄▀░░░▀▄─────────▄▀░░░▀▄─────
-───▄▀░░░░░░░▀▄─────▄▀░░░░░░░▀▄───
-─▄▀░░░░░░░░░░░▀▄─▄▀░░░░░░░░░░░▀▄─
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-Server running, listening on port ${port}!
-`);
-
 //404 handler
 app.use((req, res, next) => {
     res.status(404).send("Sorry can't find that!");
@@ -57,3 +44,28 @@ app.use((err, req, res, next) => {
         result: err
     });
 });
+
+/* When a client connects, we note it in the console
+io.sockets.on('connection', function (socket) {
+    console.log('A client is connected!');
+});
+*/
+
+app.listen(port);
+server.listen(9999, () => {
+    //socket io server listening
+})
+
+console.log(`
+────────────────▄────────────────
+──────────────▄▀░▀▄──────────────
+────────────▄▀░░░░░▀▄────────────
+──────────▄▀░░░░░░░░░▀▄──────────
+────────▄█▄▄▄▄▄▄▄▄▄▄▄▄▄█▄────────
+───────▄▀▄─────────────▄▀▄───────
+─────▄▀░░░▀▄─────────▄▀░░░▀▄─────
+───▄▀░░░░░░░▀▄─────▄▀░░░░░░░▀▄───
+─▄▀░░░░░░░░░░░▀▄─▄▀░░░░░░░░░░░▀▄─
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+Server running, listening on port ${port}!
+`);
