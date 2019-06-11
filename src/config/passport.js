@@ -13,7 +13,7 @@ passport.use(new LocalStrategy({
 }, (username, password, callback) => User.findOne({ where: { UserName: username } })
   .then((user) => {
     if (!user || !user.validatePassword(password)) {
-      return callback({ errors: { 'username or password': 'is invalid' } }, null)
+      return callback({ errors: { message: 'Username or password is invalid' } }, null)
     }
     return callback(null, user)
   }).catch(error => callback(error))))
