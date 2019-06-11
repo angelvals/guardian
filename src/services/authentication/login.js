@@ -7,8 +7,7 @@ const login = (req, res) => {
     //console.log(user)
 
     if (err || !user) {
-      return res.status(200).json({
-        success: false,
+      return res.status(401).json({
         message: err ? err.errors.message : 'Login failed'
       })
     }
