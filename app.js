@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const server = require('http').createServer(app)
+const server = require('https').createServer(app)
 global.io = require('socket.io')(server)
 const port = process.env.PORT || 3000;
 const request = require('request');
@@ -53,8 +53,8 @@ global.io.sockets.on('connection', function (socket) {
 });
 */
 
-app.listen(port);
-server.listen(9999, () => {
+//app.listen(port);
+server.listen(port, () => {
     //socket io server listening
 })
 
