@@ -18,7 +18,7 @@ Post.belongsTo(User, {
 });
 
 Post.afterCreate((post) => {
-  console.log(`Creating post`, post)
+  global.io.emit('newPost', post)
 })
 
 module.exports = Post

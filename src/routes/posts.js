@@ -11,7 +11,16 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   //Create new post
+  req.body.UserId = req.user.id
   Post.create(req.body).then((post)=>{
+    res.json(post)
+  })
+})
+
+router.delete('/', (req, res) => {
+  Post.destroy({
+    where: { id: req.query.id }
+  }).then((post)=>{
     res.json(post)
   })
 })

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app)
-const io = require('socket.io')(server)
+global.io = require('socket.io')(server)
 const port = process.env.PORT || 3000;
 const request = require('request');
 const bodyParser  = require('body-parser');
@@ -48,7 +48,7 @@ app.use((err, req, res, next) => {
 });
 
 /* When a client connects, we note it in the console
-io.sockets.on('connection', function (socket) {
+global.io.sockets.on('connection', function (socket) {
     console.log('A client is connected!');
 });
 */
