@@ -8,10 +8,10 @@
     "databasePort": 3306
   },
   "test": {
-    "username": "4rKq6ZWLRw",
-    "password": "ezMzE2k5LJ",
-    "database": "4rKq6ZWLRw",
-    "host": "remotemysql.com",
+    "username": "root",
+    "password": "root",
+    "database": "test",
+    "host": "localhost",
     "dialect": "mysql",
     "databasePort": 3306
   },

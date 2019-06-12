@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { sendNotification } = require('../services/onesignal/onesignal')
 const { setPushToken, deletePushToken } = require('../services/users/userService')
+const { createPost } = require('../services/posts/postService')
 
 router.post('/register', async(req, res) => {
   setPushToken(req, res)
@@ -16,8 +17,8 @@ router.post('/unregister', async(req, res) => {
 
 
 router.post('/sendNotification', async(req, res) => {
-  await sendNotification(req.body.players, req.body.heading, req.body.text, req.body.data)
-  res.json({ success: true })
+  await sendNotification(req.body.players, req.body.Header, req.body.Content, req.body.data)
+  createPost(req, res)
 })
 
 module.exports = router

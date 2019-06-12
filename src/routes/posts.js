@@ -1,28 +1,18 @@
 const express = require('express')
 const router = express.Router()
 
-const Post = require('../models/Post')
+const { deletePost, createPost, getPost } = require('../services/posts/postService')
 
 router.get('/', (req, res) => {
-  Post.findAll().then( posts => {
-    res.json(posts)
-  })
+  getPost(req, res)
 })
 
 router.post('/', (req, res) => {
-  //Create new post
-  req.body.UserId = req.user.id
-  Post.create(req.body).then((post)=>{
-    res.json(post)
-  })
+  createPost(req, res)
 })
 
 router.delete('/:id', (req, res) => {
-  Post.destroy({
-    where: { id: req.params.id }
-  }).then((post)=>{
-    res.json(post)
-  })
+  deletePost(req, res)
 })
 
 module.exports = router
