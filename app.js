@@ -11,6 +11,7 @@ const passport = require('passport');
 const auth = require('./src/routes/authentication')
 const push = require('./src/routes/push')
 const users = require('./src/routes/users')
+const posts = require('./src/routes/posts')
 
 require('./src/config/passport')
 
@@ -28,7 +29,8 @@ app.use((req, res, next) => {
 
 app.use('/auth', auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
-app.use('/user', passport.authenticate('jwt', {session: false}), users);
+app.use('/user', users);
+app.use('/post', passport.authenticate('jwt', {session: false}), posts);
 
 //404 handler
 app.use((req, res, next) => {

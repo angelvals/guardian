@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize')
 const { sequelize } = require('../../config/sequelize.js')
+const User = require('./User')
 
 const define = (modelName, model, options = {}) => {
   model.createdBy = Sequelize.STRING
@@ -9,4 +10,14 @@ const define = (modelName, model, options = {}) => {
   return sequelize.define(modelName, model, options)
 }
 
-module.exports = define
+const relations = (modelName) => {
+  modelName.belongsTo(User, {
+	foreignKey: {
+		allowNull: false,
+	},
+	onDelete: 'restrict',
+	onUpdate: 'restrict',
+	});
+}
+
+module.exports = { define, relations }
