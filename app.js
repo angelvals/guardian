@@ -53,8 +53,7 @@ global.io.sockets.on('connection', function (socket) {
 });
 */
 
-app.listen(port);
-server.listen(9999, () => {
+server.listen(port, () => {
     //socket io server listening
 })
 
