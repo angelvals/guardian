@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize')
-const { define, relations } = require('./Admin/Model')
+const define = require('./Admin/Model')
+const User = require('./Admin/User')
+
 const Post = define('Post', {
   Header: Sequelize.STRING,
   Content: Sequelize.STRING,
@@ -7,7 +9,13 @@ const Post = define('Post', {
   Longitude: Sequelize.FLOAT
 })
 
-relations(Post);
+Post.belongsTo(User, {
+  foreignKey: {
+    allowNull: false,
+  },
+  onDelete: 'restrict',
+  onUpdate: 'restrict',
+});
 
 Post.afterCreate((post) => {
   console.log(`Creating post`, post)
