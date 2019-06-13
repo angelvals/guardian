@@ -1,20 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-const User = require('../models/Admin/User')
-const { deletePushToken } = require('../services/users/userService')
+const { deletePushToken, getAllUsers, createUser } = require('../services/users/userService')
 
 router.get('/', (req, res) => {
-  User.findAll().then( users => {
-    res.json(users)
-  })
+  getAllUsers(req, res)
 })
 
 router.post('/', (req, res) => {
-  //Create new user
-  User.create(req.body).then((user)=>{
-    res.json(user)
-  })
+  createUser(req, res)
 })
 
 router.get('/logout', (req, res) => {

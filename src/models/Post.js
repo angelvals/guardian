@@ -6,7 +6,8 @@ const Post = define('Post', {
   Header: Sequelize.STRING,
   Content: Sequelize.STRING,
   Latitude: Sequelize.FLOAT,
-  Longitude: Sequelize.FLOAT
+  Longitude: Sequelize.FLOAT,
+  Legacy: Sequelize.BOOLEAN
 })
 
 Post.belongsTo(User, {

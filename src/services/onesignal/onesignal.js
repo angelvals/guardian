@@ -3,6 +3,8 @@ const request = require('request')
 const appid = process.env.ONESIGNAL_APP_ID
 const appkey = process.env.REST_API_KEY
 
+const { getAllUsers } = require('../users/userService')
+
 module.exports.register = (userId, deviceId, deviceType) => {
     let options = {
         uri: 'https://onesignal.com/api/v1/players',
@@ -23,7 +25,16 @@ module.exports.register = (userId, deviceId, deviceType) => {
     })
 }
 
-module.exports.sendNotification = (players, heading, text, data) => {
+module.exports.sendNotification = async (players, heading, text, data) => {
+    //get all players if players is empty
+    if(players.length == 0) {
+        players = []
+        const users = await getAllUsers(null, null)
+        users.forEach(user => {
+            if(user.PushToken)
+                players.push(user.PushToken)
+        });
+    }
     let options = {
         uri: 'https://onesignal.com/api/v1/notifications',
         method: 'POST',
