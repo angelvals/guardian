@@ -21,8 +21,10 @@ app.use('/views', express.static(__dirname + '/src/views'));
 
 //Token handler
 app.use((req, res, next) => {
-    if(req.headers.authorization){
-        res.setHeader("X-Bearer-Token", req.headers.authorization.replace('Bearer ', ''))
+    const oldResJson = res.json;
+    res.json = (body) => {
+        res.setHeader("X-Bearer-Token", req.user.generateJWT());
+        oldResJson.call(res, body);
     }
     next()
 })
