@@ -22,11 +22,11 @@ app.use('/views', express.static(__dirname + '/src/views'));
 
 //Token refresher
 app.use((req, res, next) => {
-    res.on("finish", function() {
-        if(req.headers.authorization) {
-            res.setHeader("X-Bearer-Token", req.headers.authorization.replace('Bearer ', ''))
-        }
-    })
+    const oldResJson = res.json;
+    res.json = (body) => {
+        res.setHeader("X-Bearer-Token", req.user.generateJWT());
+        oldResJson.call(res, body);
+    }
     next()
 })
 
