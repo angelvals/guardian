@@ -12,6 +12,7 @@ const auth = require('./src/routes/authentication')
 const push = require('./src/routes/push')
 const users = require('./src/routes/users')
 const posts = require('./src/routes/posts')
+const stamp = require('./src/routes/stamp')
 
 require('./src/config/passport')
 
@@ -19,11 +20,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/views', express.static(__dirname + '/src/views'));
 
-//Token handler
+//Token refresher
 app.use((req, res, next) => {
-    if(req.headers.authorization){
-        res.setHeader("X-Bearer-Token", req.headers.authorization.replace('Bearer ', ''))
-    }
+    res.on("finish", function() {
+        if(req.headers.authorization) {
+            res.setHeader("X-Bearer-Token", req.headers.authorization.replace('Bearer ', ''))
+        }
+    })
     next()
 })
 
@@ -31,6 +34,8 @@ app.use('/auth', auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
 app.use('/user', passport.authenticate('jwt', {session: false}), users);
 app.use('/post', passport.authenticate('jwt', {session: false}), posts);
+//Stamp methods
+app.use('/stamp', stamp)
 
 //404 handler
 app.use((req, res, next) => {
