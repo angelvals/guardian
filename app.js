@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 
 app.use('/auth', auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
-app.use('/user', passport.authenticate('jwt', {session: false}), users);
+app.use('/user', users);
 app.use('/post', passport.authenticate('jwt', {session: false}), posts);
 
 //404 handler
