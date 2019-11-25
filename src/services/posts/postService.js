@@ -33,4 +33,4 @@ const deletePost = (req, res) => {
     })
 }
 
-module.exports = { deletePost, createPost, getPost }
+module.exports = { deletePost, createPost, getPost, updatePost }
