@@ -7,10 +7,21 @@ const getPost = (req, res) => {
 }
   
 const createPost = (req, res) => {
-    //Create new post
+    // Create new post
     req.body.UserId = req.user.id
     Post.create(req.body).then((post)=>{
       res.json(post)
+    })
+}
+
+const updatePost = (req, res) => {
+    // Update post
+    req.body.UserId = req.user.id
+    Post.update(
+        req.body,
+        { where: { id: req.params.id }
+    }).then((post)=>{
+        res.json(post)
     })
 }
   
