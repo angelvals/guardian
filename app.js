@@ -31,7 +31,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use('/auth', passport.authenticate('local'), auth)
+app.use('/auth', passport.authenticate('jwt', {session: true}), auth)
 app.use('/push', passport.authenticate('jwt', {session: false}), push);
 app.use('/user', passport.authenticate('jwt', {session: false}), users);
 app.use('/post', passport.authenticate('jwt', {session: false}), posts);
