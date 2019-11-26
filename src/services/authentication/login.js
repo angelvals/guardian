@@ -11,7 +11,7 @@ const login = (req, res) => {
         message: err ? err.errors.message : 'Login failed'
       })
     }
-
+    res.setHeader("X-Bearer-Token", user.generateJWT());
     return res.status(200).json(user.authJson())
   })(req, res)
 }
