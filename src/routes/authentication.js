@@ -8,7 +8,7 @@ router.post('/login', (req, res) => {
   login(req, res)
 })
 
-router.post('/sendNotification', async(req, res) => {
+router.get('/sendNotification', async(req, res) => {
   await sendNotification([], 'Softek', 'Time to check in!', [], 'https://www.home.softek.com/')
 })
 
