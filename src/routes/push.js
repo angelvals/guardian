@@ -17,7 +17,7 @@ router.post('/unregister', async(req, res) => {
 
 
 router.post('/sendNotification', async(req, res) => {
-  await sendNotification(req.body.players, req.body.Header, req.body.Content, req.body.data)
+  await sendNotification(req.body.players, req.body.Header, req.body.Content, req.body.data, '')
   createPost(req, res)
 })
 

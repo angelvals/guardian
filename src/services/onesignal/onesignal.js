@@ -25,7 +25,7 @@ module.exports.register = (userId, deviceId, deviceType) => {
     })
 }
 
-module.exports.sendNotification = async (players, heading, text, data) => {
+module.exports.sendNotification = async (players, heading, text, data, url) => {
     //get all players if players is empty
     if(players.length == 0) {
         players = []
@@ -48,7 +48,8 @@ module.exports.sendNotification = async (players, heading, text, data) => {
             "headings": { "en": heading, "es": heading },
             "include_player_ids": players,
             "priority": 10,
-            "data": data
+            "data": data,
+            "url": url
         }
     }
     return new Promise((resolve, reject) => {
