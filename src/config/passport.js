@@ -25,7 +25,7 @@ passport.use(new JWTStrategy({
 }, (jwtPayload, callback) => {
   //Validate token expiration
   if (moment(jwtPayload.exp, "x") < moment()) {
-    return callback(null, null)
+    // return callback(null, null)
   }
   User.findOne({ where: { UserName: jwtPayload.username } })
     .then(user => callback(null, user))
