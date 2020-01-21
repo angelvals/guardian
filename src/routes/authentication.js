@@ -10,6 +10,7 @@ router.post('/login', (req, res) => {
 
 router.get('/sendNotification', async(req, res) => {
   await sendNotification([], 'Softek', 'Time to check in!', [], 'https://www.home.softek.com/')
+  res.status(200).send("Push notification sent!!");
 })
 
 module.exports = router
