@@ -1,0 +1,1527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="classic_blue_left.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="classic_blue_left_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Indexes</div><div class="reportStats">martes, 12 de mayo de 2020 12:04:23 p. m.</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Tables.html">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li class="selLi"><a href="Indexes.html" class="selAnchor">Indexes</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="MaterializedViews.html">Materialized Views</a></li><li><a href="Tablespaces.html">Tablespaces</a></li><li><a href="Users.html">Users</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Index_{3FFC23F7-87DF-4D80-9D8F-DC6CF725BA61}">BI_BM_ENT.IDX_TTC_DIM_DESCUENTO_T01 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</option><option value="Index_{18B3561E-2A31-4E0E-8B0F-B4550BF222EA}">IX_Relationship14 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</option><option>------------</option><option value="Index_{770DD3B0-C30E-4DF9-8D7B-40411DB056A8}">BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_WIDDIM_PRODUCTO (BI_BM_ENT.TTC_DIM_PRODUCTOS)</option><option>------------</option><option value="Index_{36FE829F-7640-4799-B1DA-29B7FCAD8ADC}">BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_SCD_ROW_ID (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</option><option value="Index_{C823A370-53FD-46C7-AD5B-67083FC8BC99}">IX_Relationship1 (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</option><option>------------</option><option value="Index_{87B999AF-7B64-477C-A557-202AA1DA14E9}">BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T01 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</option><option value="Index_{F87EDD7C-33A6-4E61-B0B8-F0EAF5F2BA17}">BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T02 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</option><option>------------</option><option value="Index_{5F896B44-BC0F-4494-AE05-ABA14ACA8DFA}">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T01 (BI_BM_ENT.TTC_DIM_TIEMPO)</option><option value="Index_{7DA2FC10-0948-4499-A1C7-A3F525EBCB7D}">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T02 (BI_BM_ENT.TTC_DIM_TIEMPO)</option><option value="Index_{93A6B608-A43A-4D55-A25E-6BB68C787879}">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T3 (BI_BM_ENT.TTC_DIM_TIEMPO)</option><option>------------</option><option value="Index_{14466DAF-3A4E-4B48-A37F-34660F0B78A8}">BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</option><option value="Index_{687B2CCD-072A-4C3F-962F-218449129F5D}">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T01 (BI_BM_ENT.TTC_DIM_USUARIOS)</option><option value="Index_{3985C28B-D168-4753-8C44-73D47D77D573}">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</option><option value="Index_{52C9207D-4C02-4099-A68F-402B7F10A1B2}">IX_Relationship7 (BI_BM_ENT.TTC_DIM_USUARIOS)</option><option>------------</option><option value="Index_{E3C1A631-DD03-4C67-9CAD-EBC7404925A8}">BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS__SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</option><option value="Index_{98106A13-A4B3-421D-A455-4D88FFA83A69}">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T01 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</option><option value="Index_{60C3B2A1-84A8-4ACF-9F0F-E481B32F5DE2}">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</option><option value="Index_{95494422-3D6D-4013-8C26-8B9BE528EA84}">IX_Relationship6 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</option><option value="Index_{C3CC4D64-85F6-4F64-A3AD-FCEE0380CCEC}">IX_Relationship8 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</option><option>------------</option><option value="Index_{B2F72E08-A7D3-4870-8D85-9E7DBAAEDA2A}">BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T01 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</option><option value="Index_{05964E26-F51F-40DE-A412-B5C4E00BDDBF}">BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T02 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</option><option>------------</option><option value="Index_{62D8D0E7-8C17-4728-A2E5-A02EB6EEE825}">BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS)</option><option value="Index_{4493E745-67C9-40BA-A30A-9C6A10F68DC3}">BI_BM_ENT.IDX_TTC_MT_CUENTAS_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS)</option><option>------------</option><option value="Index_{4E73802F-48DD-48A7-AC08-A8A4E12052AD}">BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_SCD_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</option><option value="Index_{5E502420-7A4E-4DB5-A904-BD4F76593F21}">BI_BM_ENT.IDX_TTC_MT_CUENTAS_SCD_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</option><option value="Index_{E87425DA-2D47-49DE-A1C0-EE483C4CEA3A}">IX_Relationship9 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</option><option>------------</option><option value="Index_{EA261863-5A01-4D19-833D-DD6A71327640}">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option value="Index_{0CD7D9A5-5B6D-46B1-B845-3D64179380EE}">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T05 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option value="Index_{499416E9-9B08-45F9-8CFE-A82B5A51C0C7}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option value="Index_{1F0128F3-47E0-4F06-9EB3-EAC0FA941AD4}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option value="Index_{E6BCE993-22DE-4E3D-A7EB-08F83334367F}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option value="Index_{D5241521-1576-4561-96EA-26AAB81502B1}">IX_Relationship10 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</option><option>------------</option><option value="Index_{07EE3517-11A7-4F10-B4CA-ED1EA81E07B6}">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option value="Index_{CFB9822B-CEEF-48DB-81B0-EFCA9A01D47A}">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option value="Index_{7FCE24BC-726B-486A-93B6-9770CC11EBEA}">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option value="Index_{C940B673-678F-47B2-B3C6-DB4BE8ADD196}">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option value="Index_{54DB09E3-1CF8-4212-998F-4406EFE1296B}">IX_Relationship3 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</option><option>------------</option><option value="Index_{6A12EE49-E764-42C9-B0C1-1A6432ECF8D1}">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</option><option value="Index_{EC771BE9-7107-4768-93F6-83DEEA4B1214}">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</option><option value="Index_{7C6DCA52-3E2F-43E6-B545-D23AB67540E8}">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</option><option value="Index_{D175DDAE-4039-4CB7-9CB2-5D73AD25C9BE}">IX_Relationship2 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</option><option>------------</option><option value="Index_{2B2BC286-37C9-4E00-8E9C-B8B3E7B8C50A}">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_SCD_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option value="Index_{963613F0-D60E-4CD6-9057-F1A6C9B6A5AD}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option value="Index_{126C39ED-2470-4DA2-9839-AB24797CBE74}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option value="Index_{A19DDDD0-BECA-467D-8E7F-93196B73F315}">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option value="Index_{1035CEBB-6091-4D85-A586-7497B14CC467}">IX_Relationship11 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</option><option>------------</option><option value="Index_{9E319B5E-7440-4452-9E59-9D5D94B018D6}">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T01 (BI_BM_ENT.TTC_MT_SERVICIOS)</option><option value="Index_{758CBE7E-015F-4B9F-85C9-F28A08926330}">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T02 (BI_BM_ENT.TTC_MT_SERVICIOS)</option><option value="Index_{2BDA0AF6-CCDC-4B68-AC31-E60C0AE0A17C}">IX_Relationship12 (BI_BM_ENT.TTC_MT_SERVICIOS)</option><option value="Index_{97DB4177-032A-45BC-B5C5-08A5A65CA113}">IX_Relationship4 (BI_BM_ENT.TTC_MT_SERVICIOS)</option><option>------------</option><option value="Index_{C0D3B2BF-9D63-487B-B981-64339F229CA4}">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T01 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</option><option value="Index_{54B03EB7-A95E-4BB3-BA70-DC20855DD31E}">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T02 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</option><option value="Index_{D217AD14-0762-4A9F-8793-BD2EF8697C09}">IX_Relationship13 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</option><option value="Index_{178AC947-6AE2-4E67-82D5-3DFC0B959471}">IX_Relationship5 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Index_{3FFC23F7-87DF-4D80-9D8F-DC6CF725BA61}', this)">BI_BM_ENT.IDX_TTC_DIM_DESCUENTO_T01 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</a></li><li><a onClick="return showDetail('Index_{18B3561E-2A31-4E0E-8B0F-B4550BF222EA}', this)">IX_Relationship14 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{770DD3B0-C30E-4DF9-8D7B-40411DB056A8}', this)">BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_WIDDIM_PRODUCTO (BI_BM_ENT.TTC_DIM_PRODUCTOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{36FE829F-7640-4799-B1DA-29B7FCAD8ADC}', this)">BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_SCD_ROW_ID (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</a></li><li><a onClick="return showDetail('Index_{C823A370-53FD-46C7-AD5B-67083FC8BC99}', this)">IX_Relationship1 (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{87B999AF-7B64-477C-A557-202AA1DA14E9}', this)">BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T01 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</a></li><li><a onClick="return showDetail('Index_{F87EDD7C-33A6-4E61-B0B8-F0EAF5F2BA17}', this)">BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T02 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{5F896B44-BC0F-4494-AE05-ABA14ACA8DFA}', this)">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T01 (BI_BM_ENT.TTC_DIM_TIEMPO)</a></li><li><a onClick="return showDetail('Index_{7DA2FC10-0948-4499-A1C7-A3F525EBCB7D}', this)">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T02 (BI_BM_ENT.TTC_DIM_TIEMPO)</a></li><li><a onClick="return showDetail('Index_{93A6B608-A43A-4D55-A25E-6BB68C787879}', this)">BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T3 (BI_BM_ENT.TTC_DIM_TIEMPO)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{14466DAF-3A4E-4B48-A37F-34660F0B78A8}', this)">BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</a></li><li><a onClick="return showDetail('Index_{687B2CCD-072A-4C3F-962F-218449129F5D}', this)">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T01 (BI_BM_ENT.TTC_DIM_USUARIOS)</a></li><li><a onClick="return showDetail('Index_{3985C28B-D168-4753-8C44-73D47D77D573}', this)">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</a></li><li><a onClick="return showDetail('Index_{52C9207D-4C02-4099-A68F-402B7F10A1B2}', this)">IX_Relationship7 (BI_BM_ENT.TTC_DIM_USUARIOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{E3C1A631-DD03-4C67-9CAD-EBC7404925A8}', this)">BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS__SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{98106A13-A4B3-421D-A455-4D88FFA83A69}', this)">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T01 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{60C3B2A1-84A8-4ACF-9F0F-E481B32F5DE2}', this)">BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{95494422-3D6D-4013-8C26-8B9BE528EA84}', this)">IX_Relationship6 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{C3CC4D64-85F6-4F64-A3AD-FCEE0380CCEC}', this)">IX_Relationship8 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{B2F72E08-A7D3-4870-8D85-9E7DBAAEDA2A}', this)">BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T01 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</a></li><li><a onClick="return showDetail('Index_{05964E26-F51F-40DE-A412-B5C4E00BDDBF}', this)">BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T02 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{62D8D0E7-8C17-4728-A2E5-A02EB6EEE825}', this)">BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS)</a></li><li><a onClick="return showDetail('Index_{4493E745-67C9-40BA-A30A-9C6A10F68DC3}', this)">BI_BM_ENT.IDX_TTC_MT_CUENTAS_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{4E73802F-48DD-48A7-AC08-A8A4E12052AD}', this)">BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_SCD_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</a></li><li><a onClick="return showDetail('Index_{5E502420-7A4E-4DB5-A904-BD4F76593F21}', this)">BI_BM_ENT.IDX_TTC_MT_CUENTAS_SCD_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</a></li><li><a onClick="return showDetail('Index_{E87425DA-2D47-49DE-A1C0-EE483C4CEA3A}', this)">IX_Relationship9 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{EA261863-5A01-4D19-833D-DD6A71327640}', this)">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li><a onClick="return showDetail('Index_{0CD7D9A5-5B6D-46B1-B845-3D64179380EE}', this)">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T05 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li><a onClick="return showDetail('Index_{499416E9-9B08-45F9-8CFE-A82B5A51C0C7}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li><a onClick="return showDetail('Index_{1F0128F3-47E0-4F06-9EB3-EAC0FA941AD4}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li><a onClick="return showDetail('Index_{E6BCE993-22DE-4E3D-A7EB-08F83334367F}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li><a onClick="return showDetail('Index_{D5241521-1576-4561-96EA-26AAB81502B1}', this)">IX_Relationship10 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{07EE3517-11A7-4F10-B4CA-ED1EA81E07B6}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li><a onClick="return showDetail('Index_{CFB9822B-CEEF-48DB-81B0-EFCA9A01D47A}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li><a onClick="return showDetail('Index_{7FCE24BC-726B-486A-93B6-9770CC11EBEA}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li><a onClick="return showDetail('Index_{C940B673-678F-47B2-B3C6-DB4BE8ADD196}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li><a onClick="return showDetail('Index_{54DB09E3-1CF8-4212-998F-4406EFE1296B}', this)">IX_Relationship3 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{6A12EE49-E764-42C9-B0C1-1A6432ECF8D1}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</a></li><li><a onClick="return showDetail('Index_{EC771BE9-7107-4768-93F6-83DEEA4B1214}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</a></li><li><a onClick="return showDetail('Index_{7C6DCA52-3E2F-43E6-B545-D23AB67540E8}', this)">BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</a></li><li><a onClick="return showDetail('Index_{D175DDAE-4039-4CB7-9CB2-5D73AD25C9BE}', this)">IX_Relationship2 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{2B2BC286-37C9-4E00-8E9C-B8B3E7B8C50A}', this)">BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_SCD_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li><a onClick="return showDetail('Index_{963613F0-D60E-4CD6-9057-F1A6C9B6A5AD}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li><a onClick="return showDetail('Index_{126C39ED-2470-4DA2-9839-AB24797CBE74}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li><a onClick="return showDetail('Index_{A19DDDD0-BECA-467D-8E7F-93196B73F315}', this)">BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li><a onClick="return showDetail('Index_{1035CEBB-6091-4D85-A586-7497B14CC467}', this)">IX_Relationship11 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{9E319B5E-7440-4452-9E59-9D5D94B018D6}', this)">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T01 (BI_BM_ENT.TTC_MT_SERVICIOS)</a></li><li><a onClick="return showDetail('Index_{758CBE7E-015F-4B9F-85C9-F28A08926330}', this)">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T02 (BI_BM_ENT.TTC_MT_SERVICIOS)</a></li><li><a onClick="return showDetail('Index_{2BDA0AF6-CCDC-4B68-AC31-E60C0AE0A17C}', this)">IX_Relationship12 (BI_BM_ENT.TTC_MT_SERVICIOS)</a></li><li><a onClick="return showDetail('Index_{97DB4177-032A-45BC-B5C5-08A5A65CA113}', this)">IX_Relationship4 (BI_BM_ENT.TTC_MT_SERVICIOS)</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Index_{C0D3B2BF-9D63-487B-B981-64339F229CA4}', this)">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T01 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{54B03EB7-A95E-4BB3-BA70-DC20855DD31E}', this)">BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T02 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{D217AD14-0762-4A9F-8793-BD2EF8697C09}', this)">IX_Relationship13 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</a></li><li><a onClick="return showDetail('Index_{178AC947-6AE2-4E67-82D5-3DFC0B959471}', this)">IX_Relationship5 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Index_{3FFC23F7-87DF-4D80-9D8F-DC6CF725BA61}" class="item">
+<a name = "Index_{3FFC23F7-87DF-4D80-9D8F-DC6CF725BA61}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_DESCUENTO_T01 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_DESCUENTO_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_DESCUENTOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_DESCUENTO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{18B3561E-2A31-4E0E-8B0F-B4550BF222EA}" class="item">
+<a name = "Index_{18B3561E-2A31-4E0E-8B0F-B4550BF222EA}"></a>
+<div class="caption1"><p>IX_Relationship14 (BI_BM_ENT.TTC_DIM_DESCUENTOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship14</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_DESCUENTOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{770DD3B0-C30E-4DF9-8D7B-40411DB056A8}" class="item">
+<a name = "Index_{770DD3B0-C30E-4DF9-8D7B-40411DB056A8}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_WIDDIM_PRODUCTO (BI_BM_ENT.TTC_DIM_PRODUCTOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_PRODUCTOS_WIDDIM_PRODUCTO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_PRODUCTOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{36FE829F-7640-4799-B1DA-29B7FCAD8ADC}" class="item">
+<a name = "Index_{36FE829F-7640-4799-B1DA-29B7FCAD8ADC}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_PRODUCTOS_SCD_ROW_ID (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_PRODUCTOS_SCD_ROW_ID</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{C823A370-53FD-46C7-AD5B-67083FC8BC99}" class="item">
+<a name = "Index_{C823A370-53FD-46C7-AD5B-67083FC8BC99}"></a>
+<div class="caption1"><p>IX_Relationship1 (BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship1</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_PRODUCTOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{87B999AF-7B64-477C-A557-202AA1DA14E9}" class="item">
+<a name = "Index_{87B999AF-7B64-477C-A557-202AA1DA14E9}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T01 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_TASADECAMBIO_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_TASADECAMBIO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_TASADECAMBIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{F87EDD7C-33A6-4E61-B0B8-F0EAF5F2BA17}" class="item">
+<a name = "Index_{F87EDD7C-33A6-4E61-B0B8-F0EAF5F2BA17}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_TASADECAMBIO_T02 (BI_BM_ENT.TTC_DIM_TASADECAMBIO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_TASADECAMBIO_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_TASADECAMBIO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">STARTDATE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{5F896B44-BC0F-4494-AE05-ABA14ACA8DFA}" class="item">
+<a name = "Index_{5F896B44-BC0F-4494-AE05-ABA14ACA8DFA}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T01 (BI_BM_ENT.TTC_DIM_TIEMPO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_TIEMPO_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_TIEMPO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">DIA_DATE</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{7DA2FC10-0948-4499-A1C7-A3F525EBCB7D}" class="item">
+<a name = "Index_{7DA2FC10-0948-4499-A1C7-A3F525EBCB7D}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T02 (BI_BM_ENT.TTC_DIM_TIEMPO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_TIEMPO_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_TIEMPO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">DIA_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{93A6B608-A43A-4D55-A25E-6BB68C787879}" class="item">
+<a name = "Index_{93A6B608-A43A-4D55-A25E-6BB68C787879}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_TIEMPO_T3 (BI_BM_ENT.TTC_DIM_TIEMPO)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_TIEMPO_T3</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_TIEMPO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ANIO, MES_DESC, DIA_MES</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{14466DAF-3A4E-4B48-A37F-34660F0B78A8}" class="item">
+<a name = "Index_{14466DAF-3A4E-4B48-A37F-34660F0B78A8}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_DIM_USUARIOS_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO_DIRECTOR</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{687B2CCD-072A-4C3F-962F-218449129F5D}" class="item">
+<a name = "Index_{687B2CCD-072A-4C3F-962F-218449129F5D}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T01 (BI_BM_ENT.TTC_DIM_USUARIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_USUARIOS_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{3985C28B-D168-4753-8C44-73D47D77D573}" class="item">
+<a name = "Index_{3985C28B-D168-4753-8C44-73D47D77D573}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_USUARIOS_T02 (BI_BM_ENT.TTC_DIM_USUARIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_USUARIOS_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">NAME</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{52C9207D-4C02-4099-A68F-402B7F10A1B2}" class="item">
+<a name = "Index_{52C9207D-4C02-4099-A68F-402B7F10A1B2}"></a>
+<div class="caption1"><p>IX_Relationship7 (BI_BM_ENT.TTC_DIM_USUARIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship7</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{E3C1A631-DD03-4C67-9CAD-EBC7404925A8}" class="item">
+<a name = "Index_{E3C1A631-DD03-4C67-9CAD-EBC7404925A8}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_DIM_USUARIOS__SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_DIM_USUARIOS__SCD_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO_DIRECTOR</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{98106A13-A4B3-421D-A455-4D88FFA83A69}" class="item">
+<a name = "Index_{98106A13-A4B3-421D-A455-4D88FFA83A69}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T01 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_USUARIOS_SCD_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{60C3B2A1-84A8-4ACF-9F0F-E481B32F5DE2}" class="item">
+<a name = "Index_{60C3B2A1-84A8-4ACF-9F0F-E481B32F5DE2}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DIM_USUARIOS_SCD_T02 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DIM_USUARIOS_SCD_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">NAME</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{95494422-3D6D-4013-8C26-8B9BE528EA84}" class="item">
+<a name = "Index_{95494422-3D6D-4013-8C26-8B9BE528EA84}"></a>
+<div class="caption1"><p>IX_Relationship6 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship6</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{C3CC4D64-85F6-4F64-A3AD-FCEE0380CCEC}" class="item">
+<a name = "Index_{C3CC4D64-85F6-4F64-A3AD-FCEE0380CCEC}"></a>
+<div class="caption1"><p>IX_Relationship8 (BI_BM_ENT.TTC_DIM_USUARIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship8</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DIM_USUARIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{B2F72E08-A7D3-4870-8D85-9E7DBAAEDA2A}" class="item">
+<a name = "Index_{B2F72E08-A7D3-4870-8D85-9E7DBAAEDA2A}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T01 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DM_OPP_SEMANAL_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DM_OPP_SEMANAL</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD, FECHA_INICIAL</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{05964E26-F51F-40DE-A412-B5C4E00BDDBF}" class="item">
+<a name = "Index_{05964E26-F51F-40DE-A412-B5C4E00BDDBF}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_DM_OPP_SEMANAL_T02 (BI_BM_ENT.TTC_DM_OPP_SEMANAL)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_DM_OPP_SEMANAL_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_DM_OPP_SEMANAL</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">FECHA_INICIAL</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{62D8D0E7-8C17-4728-A2E5-A02EB6EEE825}" class="item">
+<a name = "Index_{62D8D0E7-8C17-4728-A2E5-A02EB6EEE825}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_MT_CUENTAS_WIDDIM_USUARIO_OWNER_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_CUENTAS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{4493E745-67C9-40BA-A30A-9C6A10F68DC3}" class="item">
+<a name = "Index_{4493E745-67C9-40BA-A30A-9C6A10F68DC3}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_CUENTAS_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_CUENTAS_ID_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_CUENTAS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{4E73802F-48DD-48A7-AC08-A8A4E12052AD}" class="item">
+<a name = "Index_{4E73802F-48DD-48A7-AC08-A8A4E12052AD}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_MT_CUENTAS_SCD_WIDDIM_USUARIO_OWNER_T02 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_MT_CUENTAS_SCD_WIDDIM_USUARIO_OWNER_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_CUENTAS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_USUARIO_OWNER</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{5E502420-7A4E-4DB5-A904-BD4F76593F21}" class="item">
+<a name = "Index_{5E502420-7A4E-4DB5-A904-BD4F76593F21}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_CUENTAS_SCD_ID_T01 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_CUENTAS_SCD_ID_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_CUENTAS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ID</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{E87425DA-2D47-49DE-A1C0-EE483C4CEA3A}" class="item">
+<a name = "Index_{E87425DA-2D47-49DE-A1C0-EE483C4CEA3A}"></a>
+<div class="caption1"><p>IX_Relationship9 (BI_BM_ENT.TTC_MT_CUENTAS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship9</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_CUENTAS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{EA261863-5A01-4D19-833D-DD6A71327640}" class="item">
+<a name = "Index_{EA261863-5A01-4D19-833D-DD6A71327640}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_MT_OPORTUNIDADES_T04</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">PROBABILITY</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{0CD7D9A5-5B6D-46B1-B845-3D64179380EE}" class="item">
+<a name = "Index_{0CD7D9A5-5B6D-46B1-B845-3D64179380EE}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_T05 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_MT_OPORTUNIDADES_T05</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{499416E9-9B08-45F9-8CFE-A82B5A51C0C7}" class="item">
+<a name = "Index_{499416E9-9B08-45F9-8CFE-A82B5A51C0C7}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{1F0128F3-47E0-4F06-9EB3-EAC0FA941AD4}" class="item">
+<a name = "Index_{1F0128F3-47E0-4F06-9EB3-EAC0FA941AD4}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">CLOSEDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{E6BCE993-22DE-4E3D-A7EB-08F83334367F}" class="item">
+<a name = "Index_{E6BCE993-22DE-4E3D-A7EB-08F83334367F}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_T03</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">FECHA_80_1A_VEZ</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{D5241521-1576-4561-96EA-26AAB81502B1}" class="item">
+<a name = "Index_{D5241521-1576-4561-96EA-26AAB81502B1}"></a>
+<div class="caption1"><p>IX_Relationship10 (BI_BM_ENT.TTC_MT_OPORTUNIDADES)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship10</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{07EE3517-11A7-4F10-B4CA-ED1EA81E07B6}" class="item">
+<a name = "Index_{07EE3517-11A7-4F10-B4CA-ED1EA81E07B6}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{CFB9822B-CEEF-48DB-81B0-EFCA9A01D47A}" class="item">
+<a name = "Index_{CFB9822B-CEEF-48DB-81B0-EFCA9A01D47A}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_SCD_WIDDIM_PRODUCTO_T04</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{7FCE24BC-726B-486A-93B6-9770CC11EBEA}" class="item">
+<a name = "Index_{7FCE24BC-726B-486A-93B6-9770CC11EBEA}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_DETALLE_T03</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{C940B673-678F-47B2-B3C6-DB4BE8ADD196}" class="item">
+<a name = "Index_{C940B673-678F-47B2-B3C6-DB4BE8ADD196}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_SCD_WIDMT_OPORTUNIDAD_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DET_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{54DB09E3-1CF8-4212-998F-4406EFE1296B}" class="item">
+<a name = "Index_{54DB09E3-1CF8-4212-998F-4406EFE1296B}"></a>
+<div class="caption1"><p>IX_Relationship3 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship3</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DET_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{6A12EE49-E764-42C9-B0C1-1A6432ECF8D1}" class="item">
+<a name = "Index_{6A12EE49-E764-42C9-B0C1-1A6432ECF8D1}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDDIM_PRODUCTO_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_WIDDIM_PRODUCTO_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{EC771BE9-7107-4768-93F6-83DEEA4B1214}" class="item">
+<a name = "Index_{EC771BE9-7107-4768-93F6-83DEEA4B1214}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_DETALLE_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_DETALLE_T03</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD_DETALLE, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{7C6DCA52-3E2F-43E6-B545-D23AB67540E8}" class="item">
+<a name = "Index_{7C6DCA52-3E2F-43E6-B545-D23AB67540E8}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPPDET_WIDMT_OPORTUNIDAD_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_OPORTUNIDAD</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_DETALLE_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{D175DDAE-4039-4CB7-9CB2-5D73AD25C9BE}" class="item">
+<a name = "Index_{D175DDAE-4039-4CB7-9CB2-5D73AD25C9BE}"></a>
+<div class="caption1"><p>IX_Relationship2 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship2</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_DETALLE</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{2B2BC286-37C9-4E00-8E9C-B8B3E7B8C50A}" class="item">
+<a name = "Index_{2B2BC286-37C9-4E00-8E9C-B8B3E7B8C50A}"></a>
+<div class="caption1"><p>BI_BM_ENT.B_IDX_TTC_MT_OPORTUNIDADES_SCD_T04 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">B_IDX_TTC_MT_OPORTUNIDADES_SCD_T04</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">PROBABILITY</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Bitmap</td>
+<td class="tabdata" width="80%">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{963613F0-D60E-4CD6-9057-F1A6C9B6A5AD}" class="item">
+<a name = "Index_{963613F0-D60E-4CD6-9057-F1A6C9B6A5AD}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T01 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_SCD_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{126C39ED-2470-4DA2-9839-AB24797CBE74}" class="item">
+<a name = "Index_{126C39ED-2470-4DA2-9839-AB24797CBE74}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T02 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_SCD_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">CLOSEDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{A19DDDD0-BECA-467D-8E7F-93196B73F315}" class="item">
+<a name = "Index_{A19DDDD0-BECA-467D-8E7F-93196B73F315}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_OPORTUNIDADES_SCD_T03 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_OPORTUNIDADES_SCD_T03</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">FECHA_80_1A_VEZ</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_OPORTUNIDADES_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{1035CEBB-6091-4D85-A586-7497B14CC467}" class="item">
+<a name = "Index_{1035CEBB-6091-4D85-A586-7497B14CC467}"></a>
+<div class="caption1"><p>IX_Relationship11 (BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship11</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_OPORTUNIDADES_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{9E319B5E-7440-4452-9E59-9D5D94B018D6}" class="item">
+<a name = "Index_{9E319B5E-7440-4452-9E59-9D5D94B018D6}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T01 (BI_BM_ENT.TTC_MT_SERVICIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_SERVICIOS_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_SERVICIO, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_SERVICIOS_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{758CBE7E-015F-4B9F-85C9-F28A08926330}" class="item">
+<a name = "Index_{758CBE7E-015F-4B9F-85C9-F28A08926330}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_SERVICIOS_T02 (BI_BM_ENT.TTC_MT_SERVICIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_SERVICIOS_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_SERVICIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_SERVICIOS_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{2BDA0AF6-CCDC-4B68-AC31-E60C0AE0A17C}" class="item">
+<a name = "Index_{2BDA0AF6-CCDC-4B68-AC31-E60C0AE0A17C}"></a>
+<div class="caption1"><p>IX_Relationship12 (BI_BM_ENT.TTC_MT_SERVICIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship12</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{97DB4177-032A-45BC-B5C5-08A5A65CA113}" class="item">
+<a name = "Index_{97DB4177-032A-45BC-B5C5-08A5A65CA113}"></a>
+<div class="caption1"><p>IX_Relationship4 (BI_BM_ENT.TTC_MT_SERVICIOS)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship4</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{C0D3B2BF-9D63-487B-B981-64339F229CA4}" class="item">
+<a name = "Index_{C0D3B2BF-9D63-487B-B981-64339F229CA4}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T01 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_SERVICIOS_SCD_T01</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">YES</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">ROW_ID, CREATEDDATE</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{54B03EB7-A95E-4BB3-BA70-DC20855DD31E}" class="item">
+<a name = "Index_{54B03EB7-A95E-4BB3-BA70-DC20855DD31E}"></a>
+<div class="caption1"><p>BI_BM_ENT.IDX_TTC_MT_SERVICIOS_SCD_T02 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IDX_TTC_MT_SERVICIOS_SCD_T02</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_SERVICIO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Index Properties</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Index Properties</td>
+<td class="tabdata" width="80%">LOCAL<br> (<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_ANT_2018"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_2019"<br>     USABLE,<br>   PARTITION "P_TTC_MT_SERVICIOS_SCD_2020"<br>     USABLE,<br>   PARTITION "P_DATOS_FUTUROS"<br>     USABLE<br> )</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{D217AD14-0762-4A9F-8793-BD2EF8697C09}" class="item">
+<a name = "Index_{D217AD14-0762-4A9F-8793-BD2EF8697C09}"></a>
+<div class="caption1"><p>IX_Relationship13 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship13</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDMT_CUENTA</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Index_{178AC947-6AE2-4E67-82D5-3DFC0B959471}" class="item">
+<a name = "Index_{178AC947-6AE2-4E67-82D5-3DFC0B959471}"></a>
+<div class="caption1"><p>IX_Relationship5 (BI_BM_ENT.TTC_MT_SERVICIOS_SCD)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">IX_Relationship5</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">BI_BM_ENT.TTC_MT_SERVICIOS_SCD</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Unique</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Names</td>
+<td class="tabdata">WIDDIM_PRODUCTO_PRECIO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>
