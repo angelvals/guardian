@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "4rKq6ZWLRw",
-    "password": "ezMzE2k5LJ",
-    "database": "4rKq6ZWLRw",
-    "host": "remotemysql.com",
+    "username": "freedbtech_angel",
+    "password": "camp123",
+    "database": "freedbtech_campgafish",
+    "host": "freedb.tech",
     "dialect": "mysql",
     "databasePort": 3306
   },
@@ -16,10 +16,10 @@
     "databasePort": 3306
   },
   "production": {
-    "username": "4rKq6ZWLRw",
-    "password": "ezMzE2k5LJ",
-    "database": "4rKq6ZWLRw",
-    "host": "remotemysql.com",
+    "username": "freedbtech_angel",
+    "password": "camp123",
+    "database": "freedbtech_campgafish",
+    "host": "freedb.tech",
     "dialect": "mysql",
     "databasePort": 3306
   }
